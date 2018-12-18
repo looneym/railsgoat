@@ -16,8 +16,6 @@ COPY Gemfile.lock Gemfile.lock
 RUN gem install bundler
 RUN bundle install
 
-RUN RAILS_ENV=production DISABLE_DATABASE_ENVIRONMENT_CHECK=1 rake db:setup
- 
 COPY config/puma.rb config/puma.rb
  
 # Copy the main application.
