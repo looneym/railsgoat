@@ -17,3 +17,7 @@ services:
       - app
     ports:
       - "80:80"
+  db:
+    image: postgres
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
