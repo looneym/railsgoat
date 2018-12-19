@@ -2,6 +2,7 @@ version: '2'
 services:
   app:
     build: .
+    dockerfile: production.Dockerfile
     image: "app:${TAG}"
     command: bundle exec puma -C config/puma.rb
     volumes:
@@ -11,7 +12,7 @@ services:
   web:
     build:
       context: .
-      dockerfile: Dockerfile-nginx
+      dockerfile: nginx.Dockerfile
     image: "web:${TAG}"
     links:
       - app
