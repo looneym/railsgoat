@@ -17,3 +17,7 @@ test:
 production:
   <<: *default
   database: myapp_production
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port:  5432

@@ -27,8 +27,5 @@ EXPOSE 3000
 ENV RAILS_ENV production 
 ENV RACK_ENV production
 
-RUN rake db:setup
-RUN rake db:seed
-
 # The default command that gets ran will be to start the Puma server.
 CMD bundle exec puma -C config/puma.rb
