@@ -6,6 +6,7 @@ gem "rails", "5.1.6.1"
 
 ruby "2.5.3"
 
+gem "pg"
 gem "aruba"
 gem "bcrypt"
 gem "coffee-rails"
