@@ -26,9 +26,9 @@ EXPOSE 3000
 # Set Rails to run in production
 ENV RAILS_ENV production 
 ENV RACK_ENV production
-ENV RDS_USERNAME $RDS_USERNAME  
-ENV RDS_PASSWORD $RDS_PASSWORD  
-ENV RDS_HOSTNAME $RDS_HOSTNAME  
+ENV RAILSGOAT_DB_USERNAME $RAILSGOAT_DB_USERNAME  
+ENV RAILSGOAT_DB_PASSWORD $RAILSGOAT_DB_PASSWORD  
+ENV RAILSGOAT_DB_HOSTNAME $RAILSGOAT_DB_HOSTNAME  
 
 # The default command that gets ran will be to start the Puma server.
 CMD bundle exec puma -C config/puma.rb
