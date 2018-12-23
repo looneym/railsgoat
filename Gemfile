@@ -29,6 +29,7 @@ gem "therubyracer"
 gem "turbolinks"
 gem "uglifier"
 gem "unicorn"
+gem 'dotenv-rails'
 
 # Add SMTP server support using MailCatcher
 # NOTE: https://github.com/sj26/mailcatcher#bundler

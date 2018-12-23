@@ -17,7 +17,7 @@ test:
 production:
   <<: *default
   database: myapp_production
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>
-  host: <%= ENV['RDS_HOSTNAME'] %>
+  username: <%= ENV['railsgoat_db_username'] %>
+  password: <%= ENV['railsgoat_db_password'] %>
+  host: <%= ENV['railsgoat_db_address'] %>
   port:  5432
