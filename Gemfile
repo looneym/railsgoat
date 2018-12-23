@@ -61,5 +61,4 @@ group :development, :test, :mysql do
 end
 
 group :mysql do
-  gem "mysql2"
 end
