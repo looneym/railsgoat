@@ -1,21 +1,12 @@
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  host: db
-  username: postgres
-  password:
-  pool: 5
-
 development:
-  <<: *default
-  database: myapp_development
-
-test:
-  <<: *default
-  database: myapp_test
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: myapp_production
   username: <%= ENV['railsgoat_db_username'] %>
   password: <%= ENV['railsgoat_db_password'] %>
