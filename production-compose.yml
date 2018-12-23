@@ -7,7 +7,7 @@ services:
     image: "app:${TAG}"
     command: bundle exec puma -C config/puma.rb
     volumes:
-      - /var/www/sample_rails_docker_app
+      - /apps/railsgoat/current
     expose:
       - "3000"
   web:

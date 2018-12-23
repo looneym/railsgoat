@@ -16,6 +16,8 @@ COPY Gemfile.lock Gemfile.lock
 RUN gem install bundler
 RUN bundle install
 
+RUN rails assets:precompile
+
 COPY config/puma.rb config/puma.rb
  
 # Copy the main application.
